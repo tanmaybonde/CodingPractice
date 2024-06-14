@@ -14,12 +14,13 @@ int anagramCount(string &str,string &ptr){
     }
 
     int count=mp.size();
+    // cout<<count;
     while(j<str.size()){
 
-        if(mp.find(ptr[j])!=mp.end()){
-            mp[ptr[j]]--;
+        if(mp.find(str[j])!=mp.end()){
+            mp[str[j]]--;
 
-                if(mp[ptr[j]]==0){
+                if(mp[str[j]]==0){
                 count--;
             }
         }
@@ -29,26 +30,26 @@ int anagramCount(string &str,string &ptr){
             j++;
         }
         else if(j-i+1==k){
-
-
             if(count==0){
                 ans++;
             }
 
-            if(mp.find(ptr[i])!=mp.end()){
-                    if(mp[ptr[i]]==1){
+            if(mp.find(str[i])!=mp.end()){
+                 mp[str[i]]++;
+                    if(mp[str[i]]==1){
                     count++;
                 }
-                mp[ptr[i]]++;
+               
+           
             }
             i++;
-            j++;
+            j++; 
         }
     }
     return ans;
 }
 int main(){
-    string str="aabaaabaaaba";
+    string str="aabaaaca";
     string ptr="aaba";
 
     cout<<anagramCount(str,ptr);
