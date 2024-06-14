@@ -1,0 +1,1 @@
+{"name":"Local: largestSubarrayofSumK","url":"f:\\DS\\Vifro\\Coding_Pratice\\SlidingWindow\\largestSubarrayofSumK.cpp","tests":[{"id":1718351512809,"input":"5\n2 1 1 1 3\n3","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\DS\\Vifro\\Coding_Pratice\\SlidingWindow\\largestSubarrayofSumK.cpp","group":"local","local":true}
